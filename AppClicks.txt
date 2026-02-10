@@ -1,0 +1,222 @@
+Matriz Curricular – Curso AppClicks (200h)
+Fundamentos de Lógica e Design de Aplicativos
+Ementa
+Conceitos fundamentais de lógica de programação, pensamento computacional visual, estruturas de controle, componentes gráficos e noções de UX/UI para aplicativos.
+Objetivo Geral
+Desenvolver a capacidade de estruturar raciocínio lógico e interfaces para aplicativos utilizando ferramentas visuais.
+Objetivos Específicos
+- Aplicar conceitos de lógica de programação em ambientes visuais.
+- Compreender princípios básicos de UX/UI.
+- Estruturar fluxos de telas e elementos interativos.
+Competências
+- Interpretação de fluxos lógicos.
+- Construção de protótipos simples.
+- Organização de componentes visuais.
+
+Desenvolvimento de Apps com FlutterFlow
+Ementa
+Criação de aplicativos utilizando FlutterFlow: telas, navegação, banco de dados, autenticação, CRUD, APIs e publicação.
+Objetivo Geral
+Capacitar o aluno a desenvolver aplicativos funcionais no FlutterFlow.
+Objetivos Específicos
+- Criar interfaces navegáveis.
+- Configurar banco de dados e autenticação.
+- Implementar CRUD e integrações com APIs externas.
+Competências
+- Construção de apps responsivos.
+- Modelagem e uso de dados.
+- Configuração e uso adequado de APIs.
+
+IA para Criar Apps
+Ementa
+Aplicação de IA generativa para engenharia de prompts, criação de protótipos, textos,
+imagens, ícones e vídeos para aplicativos.
+Objetivo Geral
+Capacitar o aluno a utilizar IA para auxiliar na criação e documentação de aplicativos.
+Objetivos Específicos
+- Criar prompts eficazes.
+- Gerar elementos visuais e textuais.
+- Revisar e documentar o projeto com o auxílio de IA.
+Competências
+- Engenharia de prompts.
+- Geração de recursos multimídia.
+- Revisão assistida por IA.
+
+Projeto Integrador AppClicks
+Ementa
+Desenvolvimento completo do aplicativo: levantamento de requisitos, modelagem,
+documentação, testes e publicação.
+Objetivo Geral
+Aplicar os conhecimentos do curso para desenvolver um app completo.
+Objetivos Específicos
+- Documentar requisitos do app.
+- Modelar banco de dados e navegação.
+- Publicar ou apresentar o aplicativo final.
+Competências
+- Gestão de projeto.
+- Documentação técnica.
+- Publicação e apresentação profissional.
+
+
+Sequência Lógica de Conteúdos – 16 Semanas
+
+Semana 1 – Abertura e Primeiros Passos
+Fundamentos de Lógica e Design
+- Introdução à lógica visual; eventos e ações; noções de interface.
+Desenvolvimento de Apps com FlutterFlow
+- Primeiro contato com FlutterFlow; criação do projeto; widgets básicos.
+IA para Criar Apps
+- Introdução à IA generativa; criação de prompts simples; geração de ideias de app.
+Projeto Integrador AppClicks
+- Formação dos grupos; escolha do tema do app; estudo do público-alvo.
+
+Semana 2 – Navegação e Requisitos
+Fundamentos de Lógica e Design
+- Fluxos simples de navegação; componentes interativos.
+Desenvolvimento de Apps com FlutterFlow
+- Criação de telas e rotas; navegação básica entre páginas.
+IA para Criar Apps
+- IA para mapear fluxos do app; geração de fluxograma textual.
+Projeto Integrador AppClicks
+- Visão geral do sistema; definição dos requisitos funcionais e não funcionais.
+
+Semana 3 – UX/UI e Prototipação
+Fundamentos de Lógica e Design
+- Princípios básicos de UX/UI; hierarquia visual; paleta de cores.
+Desenvolvimento de Apps com FlutterFlow
+- Layouts com colunas, linhas e containers; responsividade básica.
+IA para Criar Apps
+- IA para geração de protótipos e sugestões de layout.
+Projeto Integrador AppClicks
+- Elaboração do documento de requisitos; protótipo de baixa fidelidade (wireframes).
+
+Semana 4 – Lógica Condicional e Modelagem de Dados
+Fundamentos de Lógica e Design
+- Condicionais, estados e lógica aplicada a interfaces.
+Desenvolvimento de Apps com FlutterFlow
+- Introdução ao banco de dados no FlutterFlow; criação de coleções.
+IA para Criar Apps
+- IA para sugerir modelo de dados e estrutura de tabelas.
+Projeto Integrador AppClicks
+- Modelagem lógica do banco de dados (DER/MER).
+
+Semana 5 – Formulários e Validação
+Fundamentos de Lógica e Design
+- Validações de entrada de dados; máscaras e restrições.
+Desenvolvimento de Apps com FlutterFlow
+- Criação de formulários com campos vinculados ao banco.
+IA para Criar Apps
+- IA para geração de microtextos, labels e mensagens de validação.
+Projeto Integrador AppClicks
+- Criação do banco de dados local; definição das tabelas e relacionamentos.
+
+Semana 6 – CRUD Completo
+Fundamentos de Lógica e Design
+- Trabalho com listas e coleções; ordenação e filtros lógicos.
+Desenvolvimento de Apps com FlutterFlow
+- Implementação do CRUD completo (Create, Read, Update, Delete).
+IA para Criar Apps
+- IA para sugerir validações, regras de negócio e aprimoramentos.
+Projeto Integrador AppClicks
+- Documentação dos fluxos de CRUD do projeto; preenchimento de dados iniciais.
+
+Semana 7 – Listas Dinâmicas e Mapeamento de Telas
+Fundamentos de Lógica e Design
+- Estruturas de repetição e iteração visual.
+Desenvolvimento de Apps com FlutterFlow
+- ListViews, GridViews e exibição de registros dinâmicos.
+IA para Criar Apps
+- IA para criação de dependências e navegação entre telas.
+Projeto Integrador AppClicks
+- Mapeamento completo das telas do app; diagrama de navegação.
+
+Semana 8 – Identidade Visual e Multimídia
+Fundamentos de Lógica e Design
+- Multimídia em apps: imagens, ícones, sons e vídeos.
+Desenvolvimento de Apps com FlutterFlow
+- Assets, animações simples e ajustes de responsividade.
+IA para Criar Apps
+- IA para geração de ícones, logos e paleta de identidade visual.
+Projeto Integrador AppClicks
+- Construção da identidade visual do app (logo, ícone, splash screen).
+
+Semana 9 – Autenticação e Migração para Supabase
+Fundamentos de Lógica e Design
+- Lógica de controle de acesso; perfis e permissões de usuário.
+Desenvolvimento de Apps com FlutterFlow
+- Implementação de autenticação de usuário (login/cadastro).
+IA para Criar Apps
+- IA para gerar fluxos de autenticação e mensagens de erro.
+Projeto Integrador AppClicks
+- Migração do banco de dados para o Supabase; configuração do ambiente cloud.
+
+Semana 10 – Integrações e APIs
+Fundamentos de Lógica e Design
+- Conceito de APIs; comunicação entre sistemas; formato JSON.
+Desenvolvimento de Apps com FlutterFlow
+- Integração com APIs externas (ex: CEP, clima, geolocalização).
+IA para Criar Apps
+- IA para gerar payloads, testar endpoints e documentar integrações.
+Projeto Integrador AppClicks
+- Integração do app com o Supabase; testes de leitura/escrita no banco remoto.
+
+Semana 11 – Notificações e Funcionalidades Avançadas
+Fundamentos de Lógica e Design
+- Lógica de notificações e gatilhos automáticos; estados globais.
+Desenvolvimento de Apps com FlutterFlow
+- Push notifications; Firebase Cloud Messaging; ações condicionais.
+IA para Criar Apps
+- IA para gerar textos de notificação e cenários de engajamento.
+Projeto Integrador AppClicks
+- Revisão das funcionalidades implementadas; checklist de requisitos atendidos.
+
+Semana 12 – Tratamento de Erros e Preparação para Publicação
+Fundamentos de Lógica e Design
+- Tratamento de erros: feedback visual, mensagens ao usuário, estados vazios.
+Desenvolvimento de Apps com FlutterFlow
+- Debugging no FlutterFlow; tratamento de exceções; loading states.
+IA para Criar Apps
+- IA para análise heurística de usabilidade e sugestões de melhoria.
+Projeto Integrador AppClicks
+- Preenchimento dos metadados para publicação na Play Store (descrição, screenshots, categoria, classificação etária).
+
+Semana 13 – Segurança, Acessibilidade e Políticas
+Fundamentos de Lógica e Design
+- Acessibilidade em apps: contraste, fontes, navegação por toque.
+Desenvolvimento de Apps com FlutterFlow
+- Regras de segurança do banco de dados; permissões por perfil de usuário.
+IA para Criar Apps
+- IA para gerar Política de Privacidade e Termos de Uso do app.
+Projeto Integrador AppClicks
+- Processo de publicação: teste fechado (alfa), teste aberto (beta) e produção na Google Play Console.
+
+Semana 14 – Build e Documentação Final
+Fundamentos de Lógica e Design
+- Revisão de responsividade para diferentes tamanhos de tela.
+Desenvolvimento de Apps com FlutterFlow
+- Geração do APK/AAB; configuração de versionamento e assinatura.
+IA para Criar Apps
+- IA para gerar textos de marketing, descrição da loja e release notes.
+Projeto Integrador AppClicks
+- Documentação técnica final do projeto (manual do sistema, decisões técnicas).
+
+Semana 15 – Apresentação e Pitch
+Fundamentos de Lógica e Design
+- Como apresentar um projeto de app: storytelling e demonstração técnica.
+Desenvolvimento de Apps com FlutterFlow
+- Deploy final; publicação do APK/AAB; link de download.
+IA para Criar Apps
+- IA para criar roteiro de pitch, slides e vídeo promocional do app.
+Projeto Integrador AppClicks
+- Ensaio e preparação da apresentação final dos grupos.
+
+Semana 16 – Apresentação Final e Encerramento
+Fundamentos de Lógica e Design
+- Avaliação: análise crítica dos apps apresentados pelos colegas.
+Desenvolvimento de Apps com FlutterFlow
+- Demonstração ao vivo dos apps; feedback técnico entre turmas.
+IA para Criar Apps
+- Reflexão: como a IA auxiliou no projeto; boas práticas de uso de IA.
+Projeto Integrador AppClicks
+- Apresentação final dos projetos (banca avaliadora); encerramento e certificação.
+

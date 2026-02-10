@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso AppClicks – Matriz Curricular (200h)</title>
+    <meta name="description"
+        content="Planejamento semanal do curso AppClicks: 4 disciplinas, 16 semanas, 200 horas de aprendizado para criar aplicativos com FlutterFlow.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#3b6fd4">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Curso AppClicks – Matriz Curricular (200h)">
+    <meta property="og:description" content="Planejamento semanal do curso AppClicks: 4 disciplinas, 16 semanas, 200 horas de aprendizado para criar aplicativos com FlutterFlow.">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:image" content="infografico.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Curso AppClicks – Matriz Curricular (200h)">
+    <meta name="twitter:description" content="Planejamento semanal do curso AppClicks: 4 disciplinas, 16 semanas, 200 horas de aprendizado para criar aplicativos com FlutterFlow.">
+    <meta name="twitter:image" content="infografico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #f5f7fa;
+            --bg-secondary: #eef1f6;
+            --bg-card: #ffffff;
+            --bg-card-hover: #f0f4ff;
+            --surface: #e8ecf3;
+            --border: rgba(60, 80, 130, 0.12);
+            --border-active: rgba(55, 100, 200, 0.30);
+
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+
+            --accent-1: #3b6fd4;
+            --accent-1-bg: rgba(59, 111, 212, 0.08);
+            --accent-2: #7c5bbf;
+            --accent-2-bg: rgba(124, 91, 191, 0.08);
+            --accent-3: #0f9d6e;
+            --accent-3-bg: rgba(15, 157, 110, 0.08);
+            --accent-4: #d97706;
+            --accent-4-bg: rgba(217, 119, 6, 0.08);
+
+            --gradient-1: linear-gradient(135deg, #3b6fd4 0%, #5b8def 100%);
+            --gradient-2: linear-gradient(135deg, #7c5bbf 0%, #a78bfa 100%);
+            --gradient-3: linear-gradient(135deg, #0f9d6e 0%, #34d399 100%);
+            --gradient-4: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.10);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --radius-xs: 6px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ── Hero ── */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 80px 24px 60px;
+            text-align: center;
+            background: linear-gradient(180deg, #dce6f6 0%, #eef2f9 40%, var(--bg-primary) 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(59, 111, 212, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-1-bg);
+            border: 1px solid var(--border);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent-1);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #1e293b 30%, var(--accent-1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .hero-stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent-1);
+        }
+
+        .hero-stat-label {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+        }
+
+        /* ── Container ── */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ── Section ── */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-header h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .infografico-figure {
+            margin: 0;
+        }
+
+        .infografico-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-md);
+        }
+
+        .infografico-caption {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+
+        /* ── Discipline Cards ── */
+        .disciplines-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .discipline-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px;
+            transition: all 0.3s ease;
+            cursor: default;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .discipline-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            border-radius: var(--radius) var(--radius) 0 0;
+        }
+
+        .discipline-card[data-disc="fld"]::before {
+            background: var(--gradient-1);
+        }
+
+        .discipline-card[data-disc="dev"]::before {
+            background: var(--gradient-2);
+        }
+
+        .discipline-card[data-disc="ia"]::before {
+            background: var(--gradient-3);
+        }
+
+        .discipline-card[data-disc="pi"]::before {
+            background: var(--gradient-4);
+        }
+
+        .discipline-card:hover {
+            border-color: var(--border-active);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .disc-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+        }
+
+        .discipline-card[data-disc="fld"] .disc-icon {
+            background: var(--accent-1-bg);
+            color: var(--accent-1);
+        }
+
+        .discipline-card[data-disc="dev"] .disc-icon {
+            background: var(--accent-2-bg);
+            color: var(--accent-2);
+        }
+
+        .discipline-card[data-disc="ia"] .disc-icon {
+            background: var(--accent-3-bg);
+            color: var(--accent-3);
+        }
+
+        .discipline-card[data-disc="pi"] .disc-icon {
+            background: var(--accent-4-bg);
+            color: var(--accent-4);
+        }
+
+        .disc-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .disc-ementa {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.65;
+        }
+
+        .disc-details {
+            list-style: none;
+        }
+
+        .disc-details summary {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .disc-details summary .material-symbols-rounded {
+            font-size: 16px;
+            transition: transform 0.2s;
+        }
+
+        .disc-details[open] summary .material-symbols-rounded {
+            transform: rotate(90deg);
+        }
+
+        .disc-details-list {
+            list-style: none;
+            padding: 8px 0 0 4px;
+        }
+
+        .disc-details-list li {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            padding: 3px 0 3px 16px;
+            position: relative;
+        }
+
+        .disc-details-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--surface);
+        }
+
+        /* ── Filters ── */
+        .filters-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 36px;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-divider {
+            width: 1px;
+            background: var(--border);
+            margin: 4px 10px;
+        }
+
+        .filter-btn {
+            padding: 8px 18px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-family: inherit;
+            white-space: nowrap;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--border-active);
+            color: var(--text-primary);
+            background: rgba(59, 111, 212, 0.06);
+        }
+
+        .filter-btn.active {
+            border-color: var(--accent-1);
+            color: #fff;
+            background: var(--accent-1);
+            box-shadow: 0 2px 8px rgba(59, 111, 212, 0.25);
+        }
+
+        .filter-btn[data-disc="fld"].active {
+            border-color: var(--accent-1);
+            background: var(--accent-1-bg);
+            color: var(--accent-1);
+        }
+
+        .filter-btn[data-disc="dev"].active {
+            border-color: var(--accent-2);
+            background: var(--accent-2-bg);
+            color: var(--accent-2);
+        }
+
+        .filter-btn[data-disc="ia"].active {
+            border-color: var(--accent-3);
+            background: var(--accent-3-bg);
+            color: var(--accent-3);
+        }
+
+        .filter-btn[data-disc="pi"].active {
+            border-color: var(--accent-4);
+            background: var(--accent-4-bg);
+            color: var(--accent-4);
+        }
+
+        /* ── Timeline ── */
+        .timeline {
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 28px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent-1) 0%, var(--accent-2) 33%, var(--accent-3) 66%, var(--accent-4) 100%);
+            opacity: 0.2;
+            border-radius: 2px;
+        }
+
+        .week-block {
+            position: relative;
+            margin-bottom: 24px;
+            padding-left: 64px;
+            animation: fadeInUp 0.4s ease both;
+        }
+
+        .week-block.hidden {
+            display: none;
+        }
+
+        .week-dot {
+            position: absolute;
+            left: 20px;
+            top: 22px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid var(--accent-1);
+            z-index: 1;
+            transition: all 0.3s;
+        }
+
+        .week-block:hover .week-dot {
+            background: var(--accent-1);
+            box-shadow: 0 0 10px rgba(59, 111, 212, 0.3);
+        }
+
+        .week-header {
+            display: flex;
+            align-items: baseline;
+            gap: 14px;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+        }
+
+        .week-number {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-1);
+            min-width: 80px;
+        }
+
+        .week-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .week-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 12px;
+        }
+
+        .week-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 18px 20px;
+            transition: all 0.25s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .week-card:hover {
+            border-color: var(--border-active);
+            background: var(--bg-card-hover);
+            transform: translateX(4px);
+        }
+
+        .week-card.hidden {
+            display: none;
+        }
+
+        .week-card[data-disc="fld"] {
+            border-left-color: var(--accent-1);
+        }
+
+        .week-card[data-disc="dev"] {
+            border-left-color: var(--accent-2);
+        }
+
+        .week-card[data-disc="ia"] {
+            border-left-color: var(--accent-3);
+        }
+
+        .week-card[data-disc="pi"] {
+            border-left-color: var(--accent-4);
+        }
+
+        .week-card-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .week-card[data-disc="fld"] .week-card-label {
+            color: var(--accent-1);
+        }
+
+        .week-card[data-disc="dev"] .week-card-label {
+            color: var(--accent-2);
+        }
+
+        .week-card[data-disc="ia"] .week-card-label {
+            color: var(--accent-3);
+        }
+
+        .week-card[data-disc="pi"] .week-card-label {
+            color: var(--accent-4);
+        }
+
+        .week-card-label .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+        }
+
+        .week-card[data-disc="fld"] .dot {
+            background: var(--accent-1);
+        }
+
+        .week-card[data-disc="dev"] .dot {
+            background: var(--accent-2);
+        }
+
+        .week-card[data-disc="ia"] .dot {
+            background: var(--accent-3);
+        }
+
+        .week-card[data-disc="pi"] .dot {
+            background: var(--accent-4);
+        }
+
+        .week-card-content {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ── View Toggle ── */
+        .view-toggle {
+            display: flex;
+            gap: 4px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            padding: 4px;
+        }
+
+        .view-btn {
+            padding: 6px 14px;
+            border: none;
+            background: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            font-family: inherit;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .view-btn .material-symbols-rounded {
+            font-size: 17px;
+        }
+
+        .view-btn.active {
+            background: rgba(59, 111, 212, 0.10);
+            color: var(--accent-1);
+        }
+
+        /* ── Table View ── */
+        .table-view {
+            display: none;
+            overflow-x: auto;
+        }
+
+        .table-view.active {
+            display: block;
+        }
+
+        .timeline-view.active {
+            display: block;
+        }
+
+        .timeline-view {
+            display: none;
+        }
+
+        .course-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            font-size: 0.85rem;
+        }
+
+        .course-table thead th {
+            background: var(--surface);
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        .course-table thead th:nth-child(2) {
+            color: var(--accent-1);
+        }
+
+        .course-table thead th:nth-child(3) {
+            color: var(--accent-2);
+        }
+
+        .course-table thead th:nth-child(4) {
+            color: var(--accent-3);
+        }
+
+        .course-table thead th:nth-child(5) {
+            color: var(--accent-4);
+        }
+
+        .course-table tbody tr {
+            transition: background 0.2s;
+        }
+
+        .course-table tbody tr:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .course-table tbody td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+            vertical-align: top;
+            line-height: 1.55;
+        }
+
+        .course-table tbody td:first-child {
+            font-weight: 700;
+            color: var(--text-primary);
+            white-space: nowrap;
+            min-width: 130px;
+        }
+
+        .table-week-title {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-top: 2px;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* ── Animations ── */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px 40px;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            .timeline::before {
+                left: 16px;
+            }
+
+            .week-block {
+                padding-left: 48px;
+            }
+
+            .week-dot {
+                left: 8px;
+            }
+
+            .week-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-divider {
+                display: none;
+            }
+
+            .hero-stats {
+                gap: 24px;
+            }
+
+            .disciplines-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .week-cards {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* ── Scrollbar ── */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #eef1f6;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c7cdd8;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ── Hero ── -->
+    <header class="hero">
+        <div class="hero-badge">
+            <span class="material-symbols-rounded" style="font-size:16px">school</span>
+            Projeto Pedagógico de Curso
+        </div>
+        <h1>Curso AppClicks</h1>
+        <p>Aprenda a criar aplicativos do zero utilizando FlutterFlow, com apoio de Inteligência Artificial e
+            metodologia de projeto integrador.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <span class="hero-stat-value">200h</span>
+                <span class="hero-stat-label">Carga Horária</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-value">4</span>
+                <span class="hero-stat-label">Disciplinas</span>
+            </div>
+            <div class="hero-stat">
+                <span class="hero-stat-value">16</span>
+                <span class="hero-stat-label">Semanas</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" id="infografico">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visão Geral</h2>
+                <p>Infográfico resumindo pilares e jornada do curso</p>
+            </div>
+            <figure class="infografico-figure">
+                <img class="infografico-img" src="infografico.png" alt="Infográfico do Curso AppClicks com pilares e jornada em 16 semanas" loading="lazy" decoding="async">
+                <figcaption class="infografico-caption">Infográfico do Curso AppClicks</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- ── Disciplinas ── -->
+    <section class="section" id="disciplinas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Disciplinas</h2>
+                <p>Matriz curricular organizada em quatro frentes complementares</p>
+            </div>
+            <div class="disciplines-grid">
+                <!-- FLD -->
+                <div class="discipline-card" data-disc="fld">
+                    <div class="disc-icon">
+                        <span class="material-symbols-rounded">psychology</span>
+                    </div>
+                    <h3 class="disc-title">Fundamentos de Lógica e Design</h3>
+                    <p class="disc-ementa">Conceitos fundamentais de lógica de programação, pensamento computacional
+                        visual, estruturas de controle, componentes gráficos e noções de UX/UI para aplicativos.</p>
+                    <details class="disc-details">
+                        <summary>
+                            <span class="material-symbols-rounded">chevron_right</span>
+                            Objetivos Específicos
+                        </summary>
+                        <ul class="disc-details-list">
+                            <li>Aplicar conceitos de lógica de programação em ambientes visuais</li>
+                            <li>Compreender princípios básicos de UX/UI</li>
+                            <li>Estruturar fluxos de telas e elementos interativos</li>
+                        </ul>
+                    </details>
+                    <details class="disc-details" style="margin-top:8px">
+                        <summary>
+                            <span class="material-symbols-rounded">chevron_right</span>
+                            Competências
+                        </summary>
+                        <ul class="disc-details-list">
+                            <li>Interpretação de fluxos lógicos</li>
+                            <li>Construção de protótipos simples</li>
+                            <li>Organização de componentes visuais</li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- DEV -->
+                <div class="discipline-card" data-disc="dev">
+                    <div class="disc-icon">
+                        <span class="material-symbols-rounded">phone_iphone</span>
+                    </div>
+                    <h3 class="disc-title">Desenvolvimento de Apps com FlutterFlow</h3>
+                    <p class="disc-ementa">Criação de aplicativos utilizando FlutterFlow: telas, navegação, banco de
+                        dados, autenticação, CRUD, APIs e publicação.</p>
+                    <details class="disc-details">
+                        <summary>
+                            <span class="material-symbols-rounded">chevron_right</span>
+                            Objetivos Específicos
+                        </summary>
+                        <ul class="disc-details-list">
+                            <li>Criar interfaces navegáveis</li>
+                            <li>Configurar banco de dados e autenticação</li>
+                            <li>Implementar CRUD e integrações com APIs externas</li>
+                        </ul>
+                    </details>
+                    <details class="disc-details" style="margin-top:8px">
+                        <summary>
+                            <span class="material-symbols-rounded">chevron_right</span>
+                            Competências
+                        </summary>
+                        <ul class="disc-details-list">
+                            <li>Construção de apps responsivos</li>
+                            <li>Modelagem e uso de dados</li>
+                            <li>Configuração e uso adequado de APIs</li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- IA -->
+                <div class="discipline-card" data-disc="ia">
+                    <div class="disc-icon">
+                        <span class="material-symbols-rounded">smart_toy</span>
+                    </div>
+                    <h3 class="disc-title">IA para Criar Apps</h3>
+                    <p class="disc-ementa">Aplicação de IA generativa para engenharia de prompts, criação de protótipos,
+                        textos, imagens, ícones e vídeos para aplicativos.</p>
+                    <details class="disc-details">
+                        <summary>
+                            <span class="material-symbols-rounded">chevron_right</span>
+                            Objetivos Específicos
+                        </summary>
+                        <ul class="disc-details-list">
+                            <li>Criar prompts eficazes</li>
+                            <li>Gerar elementos visuais e textuais</li>
+                            <li>Revisar e documentar o projeto com auxílio de IA</li>
+                        </ul>
+                    </details>
+                    <details class="disc-details" style="margin-top:8px">
+                        <summary>
+                            <span class="material-symbols-rounded">chevron_right</span>
+                            Competências
+                        </summary>
+                        <ul class="disc-details-list">
+                            <li>Engenharia de prompts</li>
+                            <li>Geração de recursos multimídia</li>
+                            <li>Revisão assistida por IA</li>
+                        </ul>
+                    </details>
+                </div>
+                <!-- PI -->
+                <div class="discipline-card" data-disc="pi">
+                    <div class="disc-icon">
+                        <span class="material-symbols-rounded">integration_instructions</span>
+                    </div>
+                    <h3 class="disc-title">Projeto Integrador AppClicks</h3>
+                    <p class="disc-ementa">Desenvolvimento completo do aplicativo: levantamento de requisitos,
+                        modelagem, documentação, testes e publicação.</p>
+                    <details class="disc-details">
+                        <summary>
+                            <span class="material-symbols-rounded">chevron_right</span>
+                            Objetivos Específicos
+                        </summary>
+                        <ul class="disc-details-list">
+                            <li>Documentar requisitos do app</li>
+                            <li>Modelar banco de dados e navegação</li>
+                            <li>Publicar ou apresentar o aplicativo final</li>
+                        </ul>
+                    </details>
+                    <details class="disc-details" style="margin-top:8px">
+                        <summary>
+                            <span class="material-symbols-rounded">chevron_right</span>
+                            Competências
+                        </summary>
+                        <ul class="disc-details-list">
+                            <li>Gestão de projeto</li>
+                            <li>Documentação técnica</li>
+                            <li>Publicação e apresentação profissional</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Planejamento ── -->
+    <section class="section" id="planejamento">
+        <div class="container">
+            <div class="section-header">
+                <h2>Planejamento Semanal</h2>
+                <p>16 semanas de conteúdos progressivos e integrados</p>
+            </div>
+
+            <!-- Filters + View Toggle -->
+            <div
+                style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:16px; margin-bottom:36px;">
+                <div class="filters-bar" style="margin-bottom:0">
+                    <div class="filter-group" id="weekFilters">
+                        <button class="filter-btn active" data-week="all">Todas</button>
+                    </div>
+                    <div class="filter-divider"></div>
+                    <div class="filter-group" id="discFilters">
+                        <button class="filter-btn active" data-disc="all">Todas</button>
+                        <button class="filter-btn" data-disc="fld">Lógica e Design</button>
+                        <button class="filter-btn" data-disc="dev">FlutterFlow</button>
+                        <button class="filter-btn" data-disc="ia">IA</button>
+                        <button class="filter-btn" data-disc="pi">Projeto Integrador</button>
+                    </div>
+                </div>
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="timeline">
+                        <span class="material-symbols-rounded">timeline</span> Timeline
+                    </button>
+                    <button class="view-btn" data-view="table">
+                        <span class="material-symbols-rounded">table_chart</span> Tabela
+                    </button>
+                </div>
+            </div>
+
+            <!-- Timeline View -->
+            <div class="timeline-view active" id="timelineView">
+                <div class="timeline" id="timeline"></div>
+            </div>
+
+            <!-- Table View -->
+            <div class="table-view" id="tableView">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>Semana</th>
+                            <th>Lógica e Design</th>
+                            <th>FlutterFlow</th>
+                            <th>IA para Apps</th>
+                            <th>Projeto Integrador</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Curso AppClicks – Matriz Curricular 200h &middot; Projeto Pedagógico de Curso</p>
+    </footer>
+
+    <script>
+        // ── Data ──
+        const weeks = [
+            {
+                num: 1, title: "Abertura e Primeiros Passos",
+                fld: "Introdução à lógica visual; eventos e ações; noções de interface.",
+                dev: "Primeiro contato com FlutterFlow; criação do projeto; widgets básicos.",
+                ia: "Introdução à IA generativa; criação de prompts simples; geração de ideias de app.",
+                pi: "Formação dos grupos; escolha do tema do app; estudo do público-alvo."
+            },
+            {
+                num: 2, title: "Navegação e Requisitos",
+                fld: "Fluxos simples de navegação; componentes interativos.",
+                dev: "Criação de telas e rotas; navegação básica entre páginas.",
+                ia: "IA para mapear fluxos do app; geração de fluxograma textual.",
+                pi: "Visão geral do sistema; definição dos requisitos funcionais e não funcionais."
+            },
+            {
+                num: 3, title: "UX/UI e Prototipação",
+                fld: "Princípios básicos de UX/UI; hierarquia visual; paleta de cores.",
+                dev: "Layouts com colunas, linhas e containers; responsividade básica.",
+                ia: "IA para geração de protótipos e sugestões de layout.",
+                pi: "Elaboração do documento de requisitos; protótipo de baixa fidelidade (wireframes)."
+            },
+            {
+                num: 4, title: "Lógica Condicional e Modelagem de Dados",
+                fld: "Condicionais, estados e lógica aplicada a interfaces.",
+                dev: "Introdução ao banco de dados no FlutterFlow; criação de coleções.",
+                ia: "IA para sugerir modelo de dados e estrutura de tabelas.",
+                pi: "Modelagem lógica do banco de dados (DER/MER)."
+            },
+            {
+                num: 5, title: "Formulários e Validação",
+                fld: "Validações de entrada de dados; máscaras e restrições.",
+                dev: "Criação de formulários com campos vinculados ao banco.",
+                ia: "IA para geração de microtextos, labels e mensagens de validação.",
+                pi: "Criação do banco de dados local; definição das tabelas e relacionamentos."
+            },
+            {
+                num: 6, title: "CRUD Completo",
+                fld: "Trabalho com listas e coleções; ordenação e filtros lógicos.",
+                dev: "Implementação do CRUD completo (Create, Read, Update, Delete).",
+                ia: "IA para sugerir validações, regras de negócio e aprimoramentos.",
+                pi: "Documentação dos fluxos de CRUD do projeto; preenchimento de dados iniciais."
+            },
+            {
+                num: 7, title: "Listas Dinâmicas e Mapeamento de Telas",
+                fld: "Estruturas de repetição e iteração visual.",
+                dev: "ListViews, GridViews e exibição de registros dinâmicos.",
+                ia: "IA para criação de dependências e navegação entre telas.",
+                pi: "Mapeamento completo das telas do app; diagrama de navegação."
+            },
+            {
+                num: 8, title: "Identidade Visual e Multimídia",
+                fld: "Multimídia em apps: imagens, ícones, sons e vídeos.",
+                dev: "Assets, animações simples e ajustes de responsividade.",
+                ia: "IA para geração de ícones, logos e paleta de identidade visual.",
+                pi: "Construção da identidade visual do app (logo, ícone, splash screen)."
+            },
+            {
+                num: 9, title: "Autenticação e Migração para Supabase",
+                fld: "Lógica de controle de acesso; perfis e permissões de usuário.",
+                dev: "Implementação de autenticação de usuário (login/cadastro).",
+                ia: "IA para gerar fluxos de autenticação e mensagens de erro.",
+                pi: "Migração do banco de dados para o Supabase; configuração do ambiente cloud."
+            },
+            {
+                num: 10, title: "Integrações e APIs",
+                fld: "Conceito de APIs; comunicação entre sistemas; formato JSON.",
+                dev: "Integração com APIs externas (ex: CEP, clima, geolocalização).",
+                ia: "IA para gerar payloads, testar endpoints e documentar integrações.",
+                pi: "Integração do app com o Supabase; testes de leitura/escrita no banco remoto."
+            },
+            {
+                num: 11, title: "Notificações e Funcionalidades Avançadas",
+                fld: "Lógica de notificações e gatilhos automáticos; estados globais.",
+                dev: "Push notifications; Firebase Cloud Messaging; ações condicionais.",
+                ia: "IA para gerar textos de notificação e cenários de engajamento.",
+                pi: "Revisão das funcionalidades implementadas; checklist de requisitos atendidos."
+            },
+            {
+                num: 12, title: "Tratamento de Erros e Preparação para Publicação",
+                fld: "Tratamento de erros: feedback visual, mensagens ao usuário, estados vazios.",
+                dev: "Debugging no FlutterFlow; tratamento de exceções; loading states.",
+                ia: "IA para análise heurística de usabilidade e sugestões de melhoria.",
+                pi: "Preenchimento dos metadados para publicação na Play Store (descrição, screenshots, categoria, classificação etária)."
+            },
+            {
+                num: 13, title: "Segurança, Acessibilidade e Políticas",
+                fld: "Acessibilidade em apps: contraste, fontes, navegação por toque.",
+                dev: "Regras de segurança do banco de dados; permissões por perfil de usuário.",
+                ia: "IA para gerar Política de Privacidade e Termos de Uso do app.",
+                pi: "Processo de publicação: teste fechado (alfa), teste aberto (beta) e produção na Google Play Console."
+            },
+            {
+                num: 14, title: "Build e Documentação Final",
+                fld: "Revisão de responsividade para diferentes tamanhos de tela.",
+                dev: "Geração do APK/AAB; configuração de versionamento e assinatura.",
+                ia: "IA para gerar textos de marketing, descrição da loja e release notes.",
+                pi: "Documentação técnica final do projeto (manual do sistema, decisões técnicas)."
+            },
+            {
+                num: 15, title: "Apresentação e Pitch",
+                fld: "Como apresentar um projeto de app: storytelling e demonstração técnica.",
+                dev: "Deploy final; publicação do APK/AAB; link de download.",
+                ia: "IA para criar roteiro de pitch, slides e vídeo promocional do app.",
+                pi: "Ensaio e preparação da apresentação final dos grupos."
+            },
+            {
+                num: 16, title: "Apresentação Final e Encerramento",
+                fld: "Avaliação: análise crítica dos apps apresentados pelos colegas.",
+                dev: "Demonstração ao vivo dos apps; feedback técnico entre turmas.",
+                ia: "Reflexão: como a IA auxiliou no projeto; boas práticas de uso de IA.",
+                pi: "Apresentação final dos projetos (banca avaliadora); encerramento e certificação."
+            }
+        ];
+
+        const discNames = {
+            fld: "Lógica e Design",
+            dev: "FlutterFlow",
+            ia: "IA para Apps",
+            pi: "Projeto Integrador"
+        };
+
+        const discKeys = ["fld", "dev", "ia", "pi"];
+
+        // ── Build Week Filter Buttons ──
+        const weekFiltersEl = document.getElementById("weekFilters");
+        weeks.forEach(w => {
+            const btn = document.createElement("button");
+            btn.className = "filter-btn";
+            btn.dataset.week = w.num;
+            btn.textContent = `S${w.num}`;
+            weekFiltersEl.appendChild(btn);
+        });
+
+        // ── Build Timeline ──
+        const timelineEl = document.getElementById("timeline");
+        weeks.forEach(w => {
+            const block = document.createElement("div");
+            block.className = "week-block";
+            block.dataset.week = w.num;
+            block.innerHTML = `
+    <div class="week-dot"></div>
+    <div class="week-header">
+      <span class="week-number">Semana ${w.num}</span>
+      <span class="week-title">${w.title}</span>
+    </div>
+    <div class="week-cards">
+      ${discKeys.map(k => `
+        <div class="week-card" data-disc="${k}">
+          <div class="week-card-label"><span class="dot"></span>${discNames[k]}</div>
+          <div class="week-card-content">${w[k]}</div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+            timelineEl.appendChild(block);
+        });
+
+        // ── Build Table ──
+        const tableBody = document.getElementById("tableBody");
+        weeks.forEach(w => {
+            const tr = document.createElement("tr");
+            tr.dataset.week = w.num;
+            tr.innerHTML = `
+    <td>Semana ${w.num}<span class="table-week-title">${w.title}</span></td>
+    <td>${w.fld}</td>
+    <td>${w.dev}</td>
+    <td>${w.ia}</td>
+    <td>${w.pi}</td>
+  `;
+            tableBody.appendChild(tr);
+        });
+
+        // ── Filter Logic ──
+        let activeWeek = "all";
+        let activeDisc = "all";
+
+        function applyFilters() {
+            // Timeline
+            document.querySelectorAll(".week-block").forEach(block => {
+                const weekMatch = activeWeek === "all" || block.dataset.week === activeWeek;
+                block.classList.toggle("hidden", !weekMatch);
+
+                block.querySelectorAll(".week-card").forEach(card => {
+                    const discMatch = activeDisc === "all" || card.dataset.disc === activeDisc;
+                    card.classList.toggle("hidden", !discMatch);
+                });
+            });
+
+            // Table rows
+            document.querySelectorAll("#tableBody tr").forEach(tr => {
+                const weekMatch = activeWeek === "all" || tr.dataset.week === activeWeek;
+                tr.style.display = weekMatch ? "" : "none";
+            });
+
+            // Table columns
+            const colMap = { fld: 1, dev: 2, ia: 3, pi: 4 };
+            document.querySelectorAll(".course-table th, .course-table td").forEach(cell => {
+                const idx = cell.cellIndex;
+                if (idx === 0) return;
+                if (activeDisc === "all") { cell.style.display = ""; return; }
+                const key = Object.keys(colMap).find(k => colMap[k] === idx);
+                cell.style.display = key === activeDisc ? "" : "none";
+            });
+        }
+
+        // Week filter clicks
+        document.querySelectorAll("#weekFilters .filter-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll("#weekFilters .filter-btn").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                activeWeek = btn.dataset.week || "all";
+                applyFilters();
+            });
+        });
+
+        // Disc filter clicks
+        document.querySelectorAll("#discFilters .filter-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll("#discFilters .filter-btn").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                activeDisc = btn.dataset.disc || "all";
+                applyFilters();
+            });
+        });
+
+        // View toggle
+        document.querySelectorAll(".view-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".view-btn").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                const view = btn.dataset.view;
+                document.getElementById("timelineView").classList.toggle("active", view === "timeline");
+                document.getElementById("tableView").classList.toggle("active", view === "table");
+            });
+        });
+    </script>
+</body>
+
+</html>
