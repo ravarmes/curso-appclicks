@@ -11,12 +11,14 @@
     <meta name="theme-color" content="#3b6fd4">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Curso AppClicks – Matriz Curricular (200h)">
-    <meta property="og:description" content="Planejamento semanal do curso AppClicks: 4 disciplinas, 16 semanas, 200 horas de aprendizado para criar aplicativos com FlutterFlow.">
+    <meta property="og:description"
+        content="Planejamento semanal do curso AppClicks: 4 disciplinas, 16 semanas, 200 horas de aprendizado para criar aplicativos com FlutterFlow.">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:image" content="infografico.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Curso AppClicks – Matriz Curricular (200h)">
-    <meta name="twitter:description" content="Planejamento semanal do curso AppClicks: 4 disciplinas, 16 semanas, 200 horas de aprendizado para criar aplicativos com FlutterFlow.">
+    <meta name="twitter:description"
+        content="Planejamento semanal do curso AppClicks: 4 disciplinas, 16 semanas, 200 horas de aprendizado para criar aplicativos com FlutterFlow.">
     <meta name="twitter:image" content="infografico.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,11 +76,92 @@
             min-height: 100vh;
         }
 
+        /* ── Header Logos ── */
+        .header-logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+            margin-bottom: 32px;
+            animation: fadeInUp 0.5s ease both;
+        }
+
+        .header-logos img {
+            height: 68px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.08));
+            transition: transform 0.3s ease;
+            cursor: zoom-in;
+        }
+
+        .header-logos img:hover {
+            transform: scale(1.05);
+        }
+
+        /* ── Lightbox ── */
+        .lightbox-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .lightbox-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox-overlay img {
+            max-width: 90vw;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+            transform: scale(0.85);
+            transition: transform 0.3s ease;
+        }
+
+        .lightbox-overlay.active img {
+            transform: scale(1);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-size: 1.4rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .lightbox-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
         /* ── Hero ── */
         .hero {
             position: relative;
             overflow: hidden;
-            padding: 80px 24px 60px;
+            padding: 48px 24px 60px;
             text-align: center;
             background: linear-gradient(180deg, #dce6f6 0%, #eef2f9 40%, var(--bg-primary) 100%);
         }
@@ -297,8 +380,22 @@
         .disc-ementa {
             font-size: 0.85rem;
             color: var(--text-secondary);
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             line-height: 1.65;
+        }
+
+        .disc-professor {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .disc-professor .material-symbols-rounded {
+            font-size: 16px;
         }
 
         .disc-details {
@@ -738,8 +835,17 @@
 
         /* ── Responsive ── */
         @media (max-width: 768px) {
+            .header-logos {
+                gap: 24px;
+                margin-bottom: 24px;
+            }
+
+            .header-logos img {
+                height: 48px;
+            }
+
             .hero {
-                padding: 60px 20px 40px;
+                padding: 32px 20px 40px;
             }
 
             .section {
@@ -804,6 +910,16 @@
 
     <!-- ── Hero ── -->
     <header class="hero">
+        <div class="header-logos">
+            <img src="pronatec.png" alt="Pronatec – Programa Nacional de Acesso ao Ensino Técnico e Emprego">
+            <img src="ifes.png" alt="IFES – Instituto Federal do Espírito Santo">
+        </div>
+
+        <!-- Lightbox Overlay -->
+        <div class="lightbox-overlay" id="lightbox">
+            <button class="lightbox-close" aria-label="Fechar">&times;</button>
+            <img src="" alt="Imagem ampliada" id="lightboxImg">
+        </div>
         <div class="hero-badge">
             <span class="material-symbols-rounded" style="font-size:16px">school</span>
             Projeto Pedagógico de Curso
@@ -834,7 +950,9 @@
                 <p>Infográfico resumindo pilares e jornada do curso</p>
             </div>
             <figure class="infografico-figure">
-                <img class="infografico-img" src="infografico.png" alt="Infográfico do Curso AppClicks com pilares e jornada em 16 semanas" loading="lazy" decoding="async">
+                <img class="infografico-img" src="infografico.png"
+                    alt="Infográfico do Curso AppClicks com pilares e jornada em 16 semanas" loading="lazy"
+                    decoding="async">
                 <figcaption class="infografico-caption">Infográfico do Curso AppClicks</figcaption>
             </figure>
         </div>
@@ -856,6 +974,10 @@
                     <h3 class="disc-title">Fundamentos de Lógica e Design</h3>
                     <p class="disc-ementa">Conceitos fundamentais de lógica de programação, pensamento computacional
                         visual, estruturas de controle, componentes gráficos e noções de UX/UI para aplicativos.</p>
+                    <div class="disc-professor">
+                        <span class="material-symbols-rounded">person</span>
+                        Emanoel Martins Vieira
+                    </div>
                     <details class="disc-details">
                         <summary>
                             <span class="material-symbols-rounded">chevron_right</span>
@@ -887,6 +1009,10 @@
                     <h3 class="disc-title">Desenvolvimento de Apps com FlutterFlow</h3>
                     <p class="disc-ementa">Criação de aplicativos utilizando FlutterFlow: telas, navegação, banco de
                         dados, autenticação, CRUD, APIs e publicação.</p>
+                    <div class="disc-professor">
+                        <span class="material-symbols-rounded">person</span>
+                        Emanoel Martins Vieira
+                    </div>
                     <details class="disc-details">
                         <summary>
                             <span class="material-symbols-rounded">chevron_right</span>
@@ -918,6 +1044,10 @@
                     <h3 class="disc-title">IA para Criar Apps</h3>
                     <p class="disc-ementa">Aplicação de IA generativa para engenharia de prompts, criação de protótipos,
                         textos, imagens, ícones e vídeos para aplicativos.</p>
+                    <div class="disc-professor">
+                        <span class="material-symbols-rounded">person</span>
+                        Bruno Missi Xavier
+                    </div>
                     <details class="disc-details">
                         <summary>
                             <span class="material-symbols-rounded">chevron_right</span>
@@ -949,6 +1079,10 @@
                     <h3 class="disc-title">Projeto Integrador AppClicks</h3>
                     <p class="disc-ementa">Desenvolvimento completo do aplicativo: levantamento de requisitos,
                         modelagem, documentação, testes e publicação.</p>
+                    <div class="disc-professor">
+                        <span class="material-symbols-rounded">person</span>
+                        Rafael Vargas Mesquita
+                    </div>
                     <details class="disc-details">
                         <summary>
                             <span class="material-symbols-rounded">chevron_right</span>
@@ -1275,6 +1409,26 @@
                 document.getElementById("tableView").classList.toggle("active", view === "table");
             });
         });
+        // ── Lightbox ──
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+        document.querySelectorAll('.header-logos img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+        }
+
+        lightboxClose.addEventListener('click', (e) => { e.stopPropagation(); closeLightbox(); });
+        lightbox.addEventListener('click', closeLightbox);
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
     </script>
 </body>
 
